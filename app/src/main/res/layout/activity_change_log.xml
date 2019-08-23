@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.liamure.podcasteron.podcasteron.ChangeLog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Release Build"
+                android:id="@+id/textView15"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_row="950"
+                android:layout_column="0"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.1"
+                android:id="@+id/textView20"
+                android:layout_row="951"
+                android:layout_column="0"
+                android:textSize="17dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(BugFix) Spacing between episodes reduced"
+                android:id="@+id/textView21"
+                android:layout_row="952"
+                android:layout_column="0"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(BugFix) Fiexed error when trying to play epidode on Android >7.0"
+                android:id="@+id/textView22"
+                android:layout_row="953"
+                android:layout_column="0"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(BugFix) Fiexed error when a Music folder does not exist"
+                android:id="@+id/textView23"
+                android:layout_row="954"
+                android:layout_column="0"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(BugFix) Fixed episode numbering problem"
+                android:id="@+id/textView24"
+                android:layout_row="955"
+                android:layout_column="0"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(FeatureAdd) Added a description to each episode"
+                android:id="@+id/textView25"
+                android:layout_row="956"
+                android:layout_column="0"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(FeatureAdd) Changelog"
+                android:id="@+id/textView26"
+                android:layout_row="958"
+                android:layout_column="0"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(FeatureChange) New theme"
+                android:id="@+id/textView39"
+                android:layout_row="901"
+                android:layout_column="0"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(FeatureAdd) Radio Shows"
+                android:id="@+id/textView40"
+                android:layout_row="902"
+                android:layout_column="0"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(BugFix) Changelog named correctly"
+                android:id="@+id/textView41"
+                android:layout_row="903"
+                android:layout_column="0"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(BugFix) Don&apos;t have to scroll up for episode info"
+                android:id="@+id/textView53"
+                android:layout_row="905"
+                android:layout_column="0"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(BugFix) Will return scroll to correct position after viewing info"
+                android:id="@+id/textView82"
+                android:layout_row="906"
+                android:layout_column="0"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="1.2"
+                android:id="@+id/textView38"
+                android:layout_row="900"
+                android:layout_column="0"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+        </GridLayout>
+
+    </RelativeLayout>
+</ScrollView>

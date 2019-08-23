@@ -1,0 +1,3366 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Radio1Fragment"
+    android:visibility="visible"
+    android:id="@+id/r2Scroll">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/relEpisodeListR2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relDescriptionLayoutR2"
+            android:visibility="invisible"
+            android:layout_marginTop="120dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relSubDescriptionLayout"
+                android:visibility="visible">
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imgDescBack"
+                android:src="@drawable/bgsmall"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                android:paddingRight="7dp" />
+
+            <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:useDefaultMargins="false"
+                android:visibility="visible"
+                android:paddingTop="30dp"
+                android:id="@+id/gridDesc">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgDesc"
+                    android:src="@drawable/r2cover"
+                    android:paddingLeft="0dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Ricky Gervais Show"
+                    android:id="@+id/textView13"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Radio # Episode #"
+                    android:id="@+id/txtTitleR2"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date: 12/12/2001"
+                    android:id="@+id/txtDateR2"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" desc  desc  desc  desc  desc  desc  desc  desc  desc  desc  desc  desc  desc  desc  desc  desc  desc "
+                    android:id="@+id/txtDescR2"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_row="6"
+                    android:layout_column="0">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:id="@+id/button13"
+                        android:layout_row="5"
+                        android:layout_column="0"
+                        android:onClick="closeDescR2"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginEnd="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:id="@+id/btnDelete"
+                        android:layout_marginRight="22dp"
+                        android:layout_marginEnd="22dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/button13"
+                        android:layout_toStartOf="@+id/button13"
+                        android:onClick="deleteEpisode" />
+                </RelativeLayout>
+
+            </GridLayout>
+
+            <WebView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/webView7"
+                android:layout_below="@+id/gridDesc"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="15dp"
+                />
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gridEpisodesR2"
+            android:layout_marginTop="110dp"
+            android:visibility="visible"
+            android:useDefaultMargins="false">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button600"
+                    android:layout_alignBottom="@+id/imageButton1"
+                    android:layout_alignRight="@+id/imageButton1"
+                    android:layout_alignEnd="@+id/imageButton1"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-1" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton1"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 1"
+                    android:id="@+id/textView1"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton1"
+                    android:layout_alignLeft="@+id/imageButton1"
+                    android:layout_alignStart="@+id/imageButton1"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView9"
+                    android:layout_alignTop="@+id/button600"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button600"
+                    android:layout_toStartOf="@+id/button600"
+                    android:layout_alignRight="@+id/textView1"
+                    android:layout_alignEnd="@+id/textView1"
+                    android:layout_marginRight="50dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button6001"
+                    android:layout_alignBottom="@+id/imageButton13"
+                    android:layout_alignRight="@+id/imageButton13"
+                    android:layout_alignEnd="@+id/imageButton13"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-2" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton13"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 2"
+                    android:id="@+id/textView27"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton13"
+                    android:layout_alignLeft="@+id/imageButton13"
+                    android:layout_alignStart="@+id/imageButton13"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView13"
+                    android:layout_alignTop="@+id/button6001"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button6001"
+                    android:layout_toStartOf="@+id/button6001"
+                    android:layout_alignRight="@+id/textView27"
+                    android:layout_alignEnd="@+id/textView27"
+                    android:layout_marginRight="50dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button21"
+                    android:layout_alignBottom="@+id/imageButton14"
+                    android:layout_alignRight="@+id/imageButton14"
+                    android:layout_alignEnd="@+id/imageButton14"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-3" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton14"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 3"
+                    android:id="@+id/textView28"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton14"
+                    android:layout_alignLeft="@+id/imageButton14"
+                    android:layout_alignStart="@+id/imageButton14"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView15"
+                    android:layout_alignTop="@+id/button21"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button21"
+                    android:layout_toStartOf="@+id/button21"
+                    android:layout_alignRight="@+id/textView28"
+                    android:layout_alignEnd="@+id/textView28"
+                    android:layout_marginRight="50dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button22"
+                    android:layout_alignBottom="@+id/imageButton15"
+                    android:layout_alignRight="@+id/imageButton15"
+                    android:layout_alignEnd="@+id/imageButton15"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-4" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton15"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 4"
+                    android:id="@+id/textView29"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton15"
+                    android:layout_alignLeft="@+id/imageButton15"
+                    android:layout_alignStart="@+id/imageButton15"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView21"
+                    android:layout_alignTop="@+id/button22"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button22"
+                    android:layout_toStartOf="@+id/button22"
+                    android:layout_alignRight="@+id/textView29"
+                    android:layout_alignEnd="@+id/textView29"
+                    android:layout_marginRight="50dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button23"
+                    android:layout_alignBottom="@+id/imageButton20"
+                    android:layout_alignRight="@+id/imageButton20"
+                    android:layout_alignEnd="@+id/imageButton20"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-5" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton20"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 5"
+                    android:id="@+id/textView30"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton20"
+                    android:layout_alignLeft="@+id/imageButton20"
+                    android:layout_alignStart="@+id/imageButton20"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView22"
+                    android:layout_alignTop="@+id/button23"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button23"
+                    android:layout_toStartOf="@+id/button23"
+                    android:layout_alignRight="@+id/textView30"
+                    android:layout_alignEnd="@+id/textView30"
+                    android:layout_marginRight="50dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button24"
+                    android:layout_alignBottom="@+id/imageButton21"
+                    android:layout_alignRight="@+id/imageButton21"
+                    android:layout_alignEnd="@+id/imageButton21"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-6" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton21"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 6"
+                    android:id="@+id/textView31"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton21"
+                    android:layout_alignLeft="@+id/imageButton21"
+                    android:layout_alignStart="@+id/imageButton21"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView23"
+                    android:layout_alignTop="@+id/button24"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button24"
+                    android:layout_toStartOf="@+id/button24"
+                    android:layout_alignRight="@+id/textView31"
+                    android:layout_alignEnd="@+id/textView31"
+                    android:layout_marginRight="50dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="7"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button25"
+                    android:layout_alignBottom="@+id/imageButton22"
+                    android:layout_alignRight="@+id/imageButton22"
+                    android:layout_alignEnd="@+id/imageButton22"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-7" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton22"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 7"
+                    android:id="@+id/textView32"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton22"
+                    android:layout_alignLeft="@+id/imageButton22"
+                    android:layout_alignStart="@+id/imageButton22"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView24"
+                    android:layout_alignTop="@+id/button25"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button25"
+                    android:layout_toStartOf="@+id/button25"
+                    android:layout_alignRight="@+id/textView32"
+                    android:layout_alignEnd="@+id/textView32"
+                    android:layout_marginRight="50dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="8"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button26"
+                    android:layout_alignBottom="@+id/imageButton23"
+                    android:layout_alignRight="@+id/imageButton23"
+                    android:layout_alignEnd="@+id/imageButton23"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-8" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton23"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 8"
+                    android:id="@+id/textView33"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton23"
+                    android:layout_alignLeft="@+id/imageButton23"
+                    android:layout_alignStart="@+id/imageButton23"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView25"
+                    android:layout_alignTop="@+id/button26"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button26"
+                    android:layout_toStartOf="@+id/button26"
+                    android:layout_alignRight="@+id/textView33"
+                    android:layout_alignEnd="@+id/textView33"
+                    android:layout_marginRight="50dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="9"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button27"
+                    android:layout_alignBottom="@+id/imageButton24"
+                    android:layout_alignRight="@+id/imageButton24"
+                    android:layout_alignEnd="@+id/imageButton24"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-9" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton24"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 9"
+                    android:id="@+id/textView34"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton24"
+                    android:layout_alignLeft="@+id/imageButton24"
+                    android:layout_alignStart="@+id/imageButton24"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView26"
+                    android:layout_alignTop="@+id/button27"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button27"
+                    android:layout_toStartOf="@+id/button27"
+                    android:layout_alignRight="@+id/textView34"
+                    android:layout_alignEnd="@+id/textView34"
+                    android:layout_marginRight="50dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="10"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button28"
+                    android:layout_alignBottom="@+id/imageButton25"
+                    android:layout_alignRight="@+id/imageButton25"
+                    android:layout_alignEnd="@+id/imageButton25"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-10" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton25"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 10"
+                    android:id="@+id/textView35"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton25"
+                    android:layout_alignLeft="@+id/imageButton25"
+                    android:layout_alignStart="@+id/imageButton25"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView27"
+                    android:layout_alignTop="@+id/button28"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button28"
+                    android:layout_toStartOf="@+id/button28"
+                    android:layout_alignRight="@+id/textView35"
+                    android:layout_alignEnd="@+id/textView35"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="11"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button29"
+                    android:layout_alignBottom="@+id/imageButton26"
+                    android:layout_alignRight="@+id/imageButton26"
+                    android:layout_alignEnd="@+id/imageButton26"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-11" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton26"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-11" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 11"
+                    android:id="@+id/textView36"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton26"
+                    android:layout_alignLeft="@+id/imageButton26"
+                    android:layout_alignStart="@+id/imageButton26"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView28"
+                    android:layout_alignTop="@+id/button29"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button29"
+                    android:layout_toStartOf="@+id/button29"
+                    android:layout_alignRight="@+id/textView36"
+                    android:layout_alignEnd="@+id/textView36"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="12"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button30"
+                    android:layout_alignBottom="@+id/imageButton27"
+                    android:layout_alignRight="@+id/imageButton27"
+                    android:layout_alignEnd="@+id/imageButton27"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-12" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton27"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 12"
+                    android:id="@+id/textView37"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton27"
+                    android:layout_alignLeft="@+id/imageButton27"
+                    android:layout_alignStart="@+id/imageButton27"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView29"
+                    android:layout_alignTop="@+id/button30"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button30"
+                    android:layout_toStartOf="@+id/button30"
+                    android:layout_alignRight="@+id/textView37"
+                    android:layout_alignEnd="@+id/textView37"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="13"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button31"
+                    android:layout_alignBottom="@+id/imageButton28"
+                    android:layout_alignRight="@+id/imageButton28"
+                    android:layout_alignEnd="@+id/imageButton28"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-13" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton28"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 13"
+                    android:id="@+id/textView42"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton28"
+                    android:layout_alignLeft="@+id/imageButton28"
+                    android:layout_alignStart="@+id/imageButton28"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView30"
+                    android:layout_alignTop="@+id/button31"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button31"
+                    android:layout_toStartOf="@+id/button31"
+                    android:layout_alignRight="@+id/textView42"
+                    android:layout_alignEnd="@+id/textView42"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="14"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button32"
+                    android:layout_alignBottom="@+id/imageButton29"
+                    android:layout_alignRight="@+id/imageButton29"
+                    android:layout_alignEnd="@+id/imageButton29"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-14" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton29"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 14"
+                    android:id="@+id/textView43"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton29"
+                    android:layout_alignLeft="@+id/imageButton29"
+                    android:layout_alignStart="@+id/imageButton29"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView31"
+                    android:layout_alignTop="@+id/button32"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button32"
+                    android:layout_toStartOf="@+id/button32"
+                    android:layout_alignRight="@+id/textView43"
+                    android:layout_alignEnd="@+id/textView43"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="15"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button33"
+                    android:layout_alignBottom="@+id/imageButton30"
+                    android:layout_alignRight="@+id/imageButton30"
+                    android:layout_alignEnd="@+id/imageButton30"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-15" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton30"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 15"
+                    android:id="@+id/textView44"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton30"
+                    android:layout_alignLeft="@+id/imageButton30"
+                    android:layout_alignStart="@+id/imageButton30"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView32"
+                    android:layout_alignTop="@+id/button33"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button33"
+                    android:layout_toStartOf="@+id/button33"
+                    android:layout_alignRight="@+id/textView44"
+                    android:layout_alignEnd="@+id/textView44"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="16"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button34"
+                    android:layout_alignBottom="@+id/imageButton31"
+                    android:layout_alignRight="@+id/imageButton31"
+                    android:layout_alignEnd="@+id/imageButton31"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-16" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton31"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 16"
+                    android:id="@+id/textView45"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton31"
+                    android:layout_alignLeft="@+id/imageButton31"
+                    android:layout_alignStart="@+id/imageButton31"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView33"
+                    android:layout_alignTop="@+id/button34"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button34"
+                    android:layout_toStartOf="@+id/button34"
+                    android:layout_alignRight="@+id/textView45"
+                    android:layout_alignEnd="@+id/textView45"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="17"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button35"
+                    android:layout_alignBottom="@+id/imageButton32"
+                    android:layout_alignRight="@+id/imageButton32"
+                    android:layout_alignEnd="@+id/imageButton32"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-17" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton32"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-17" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 17"
+                    android:id="@+id/textView46"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton32"
+                    android:layout_alignLeft="@+id/imageButton32"
+                    android:layout_alignStart="@+id/imageButton32"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView34"
+                    android:layout_alignTop="@+id/button35"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button35"
+                    android:layout_toStartOf="@+id/button35"
+                    android:layout_alignRight="@+id/textView46"
+                    android:layout_alignEnd="@+id/textView46"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="19"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button36"
+                    android:layout_alignBottom="@+id/imageButton33"
+                    android:layout_alignRight="@+id/imageButton33"
+                    android:layout_alignEnd="@+id/imageButton33"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-18" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton33"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-18" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 18"
+                    android:id="@+id/textView47"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton33"
+                    android:layout_alignLeft="@+id/imageButton33"
+                    android:layout_alignStart="@+id/imageButton33"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView35"
+                    android:layout_alignTop="@+id/button36"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button36"
+                    android:layout_toStartOf="@+id/button36"
+                    android:layout_alignRight="@+id/textView47"
+                    android:layout_alignEnd="@+id/textView47"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="20"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button37"
+                    android:layout_alignBottom="@+id/imageButton34"
+                    android:layout_alignRight="@+id/imageButton34"
+                    android:layout_alignEnd="@+id/imageButton34"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-19" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton34"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-19" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 19"
+                    android:id="@+id/textView48"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton34"
+                    android:layout_alignLeft="@+id/imageButton34"
+                    android:layout_alignStart="@+id/imageButton34"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView36"
+                    android:layout_alignTop="@+id/button37"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button37"
+                    android:layout_toStartOf="@+id/button37"
+                    android:layout_alignRight="@+id/textView48"
+                    android:layout_alignEnd="@+id/textView48"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="21"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button38"
+                    android:layout_alignBottom="@+id/imageButton35"
+                    android:layout_alignRight="@+id/imageButton35"
+                    android:layout_alignEnd="@+id/imageButton35"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-20" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton35"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 20"
+                    android:id="@+id/textView49"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton35"
+                    android:layout_alignLeft="@+id/imageButton35"
+                    android:layout_alignStart="@+id/imageButton35"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView37"
+                    android:layout_alignTop="@+id/button38"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button38"
+                    android:layout_toStartOf="@+id/button38"
+                    android:layout_alignRight="@+id/textView49"
+                    android:layout_alignEnd="@+id/textView49"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="22"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button39"
+                    android:layout_alignBottom="@+id/imageButton36"
+                    android:layout_alignRight="@+id/imageButton36"
+                    android:layout_alignEnd="@+id/imageButton36"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-21" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton36"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-21" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 21"
+                    android:id="@+id/textView50"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton36"
+                    android:layout_alignLeft="@+id/imageButton36"
+                    android:layout_alignStart="@+id/imageButton36"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView38"
+                    android:layout_alignTop="@+id/button39"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button39"
+                    android:layout_toStartOf="@+id/button39"
+                    android:layout_alignRight="@+id/textView50"
+                    android:layout_alignEnd="@+id/textView50"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="23"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button40"
+                    android:layout_alignBottom="@+id/imageButton37"
+                    android:layout_alignRight="@+id/imageButton37"
+                    android:layout_alignEnd="@+id/imageButton37"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-22" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton37"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-22" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 22"
+                    android:id="@+id/textView51"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton37"
+                    android:layout_alignLeft="@+id/imageButton37"
+                    android:layout_alignStart="@+id/imageButton37"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView39"
+                    android:layout_alignTop="@+id/button40"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button40"
+                    android:layout_toStartOf="@+id/button40"
+                    android:layout_alignRight="@+id/textView51"
+                    android:layout_alignEnd="@+id/textView51"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="24"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button41"
+                    android:layout_alignBottom="@+id/imageButton38"
+                    android:layout_alignRight="@+id/imageButton38"
+                    android:layout_alignEnd="@+id/imageButton38"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-23" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton38"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-23" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 23"
+                    android:id="@+id/textView52"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton38"
+                    android:layout_alignLeft="@+id/imageButton38"
+                    android:layout_alignStart="@+id/imageButton38"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView40"
+                    android:layout_alignTop="@+id/button41"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button41"
+                    android:layout_toStartOf="@+id/button41"
+                    android:layout_alignRight="@+id/textView52"
+                    android:layout_alignEnd="@+id/textView52"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="25"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button42"
+                    android:layout_alignBottom="@+id/imageButton39"
+                    android:layout_alignRight="@+id/imageButton39"
+                    android:layout_alignEnd="@+id/imageButton39"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-24" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton39"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 24"
+                    android:id="@+id/textView54"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton39"
+                    android:layout_alignLeft="@+id/imageButton39"
+                    android:layout_alignStart="@+id/imageButton39"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView41"
+                    android:layout_alignTop="@+id/button42"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button42"
+                    android:layout_toStartOf="@+id/button42"
+                    android:layout_alignRight="@+id/textView54"
+                    android:layout_alignEnd="@+id/textView54"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="26"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button43"
+                    android:layout_alignBottom="@+id/imageButton40"
+                    android:layout_alignRight="@+id/imageButton40"
+                    android:layout_alignEnd="@+id/imageButton40"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-25" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton40"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-25" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 25"
+                    android:id="@+id/textView55"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton40"
+                    android:layout_alignLeft="@+id/imageButton40"
+                    android:layout_alignStart="@+id/imageButton40"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView42"
+                    android:layout_alignTop="@+id/button43"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button43"
+                    android:layout_toStartOf="@+id/button43"
+                    android:layout_alignRight="@+id/textView55"
+                    android:layout_alignEnd="@+id/textView55"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="27"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button44"
+                    android:layout_alignBottom="@+id/imageButton41"
+                    android:layout_alignRight="@+id/imageButton41"
+                    android:layout_alignEnd="@+id/imageButton41"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-26" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton41"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-26" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 26"
+                    android:id="@+id/textView56"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton41"
+                    android:layout_alignLeft="@+id/imageButton41"
+                    android:layout_alignStart="@+id/imageButton41"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView43"
+                    android:layout_alignTop="@+id/button44"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button44"
+                    android:layout_toStartOf="@+id/button44"
+                    android:layout_alignRight="@+id/textView56"
+                    android:layout_alignEnd="@+id/textView56"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="28"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button45"
+                    android:layout_alignBottom="@+id/imageButton42"
+                    android:layout_alignRight="@+id/imageButton42"
+                    android:layout_alignEnd="@+id/imageButton42"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-27" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton42"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-27" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 27"
+                    android:id="@+id/textView57"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton42"
+                    android:layout_alignLeft="@+id/imageButton42"
+                    android:layout_alignStart="@+id/imageButton42"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView44"
+                    android:layout_alignTop="@+id/button45"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button45"
+                    android:layout_toStartOf="@+id/button45"
+                    android:layout_alignRight="@+id/textView57"
+                    android:layout_alignEnd="@+id/textView57"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="29"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button46"
+                    android:layout_alignBottom="@+id/imageButton43"
+                    android:layout_alignRight="@+id/imageButton43"
+                    android:layout_alignEnd="@+id/imageButton43"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-28" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton43"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-28" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 28"
+                    android:id="@+id/textView58"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton43"
+                    android:layout_alignLeft="@+id/imageButton43"
+                    android:layout_alignStart="@+id/imageButton43"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView45"
+                    android:layout_alignTop="@+id/button46"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button46"
+                    android:layout_toStartOf="@+id/button46"
+                    android:layout_alignRight="@+id/textView58"
+                    android:layout_alignEnd="@+id/textView58"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="30"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button47"
+                    android:layout_alignBottom="@+id/imageButton44"
+                    android:layout_alignRight="@+id/imageButton44"
+                    android:layout_alignEnd="@+id/imageButton44"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-29" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton44"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-29" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 29"
+                    android:id="@+id/textView59"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton44"
+                    android:layout_alignLeft="@+id/imageButton44"
+                    android:layout_alignStart="@+id/imageButton44"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView46"
+                    android:layout_alignTop="@+id/button47"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button47"
+                    android:layout_toStartOf="@+id/button47"
+                    android:layout_alignRight="@+id/textView59"
+                    android:layout_alignEnd="@+id/textView59"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="31"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button48"
+                    android:layout_alignBottom="@+id/imageButton45"
+                    android:layout_alignRight="@+id/imageButton45"
+                    android:layout_alignEnd="@+id/imageButton45"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-30" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton45"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-30" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 30"
+                    android:id="@+id/textView60"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton45"
+                    android:layout_alignLeft="@+id/imageButton45"
+                    android:layout_alignStart="@+id/imageButton45"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView47"
+                    android:layout_alignTop="@+id/button48"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button48"
+                    android:layout_toStartOf="@+id/button48"
+                    android:layout_alignRight="@+id/textView60"
+                    android:layout_alignEnd="@+id/textView60"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="32"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button49"
+                    android:layout_alignBottom="@+id/imageButton46"
+                    android:layout_alignRight="@+id/imageButton46"
+                    android:layout_alignEnd="@+id/imageButton46"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-31" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton46"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-31" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 31"
+                    android:id="@+id/textView61"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton46"
+                    android:layout_alignLeft="@+id/imageButton46"
+                    android:layout_alignStart="@+id/imageButton46"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView48"
+                    android:layout_alignTop="@+id/button49"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button49"
+                    android:layout_toStartOf="@+id/button49"
+                    android:layout_alignRight="@+id/textView61"
+                    android:layout_alignEnd="@+id/textView61"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="33"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button50"
+                    android:layout_alignBottom="@+id/imageButton47"
+                    android:layout_alignRight="@+id/imageButton47"
+                    android:layout_alignEnd="@+id/imageButton47"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-32" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton47"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-32" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 32"
+                    android:id="@+id/textView62"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton47"
+                    android:layout_alignLeft="@+id/imageButton47"
+                    android:layout_alignStart="@+id/imageButton47"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView49"
+                    android:layout_alignTop="@+id/button50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button50"
+                    android:layout_toStartOf="@+id/button50"
+                    android:layout_alignRight="@+id/textView62"
+                    android:layout_alignEnd="@+id/textView62"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="34"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button51"
+                    android:layout_alignBottom="@+id/imageButton48"
+                    android:layout_alignRight="@+id/imageButton48"
+                    android:layout_alignEnd="@+id/imageButton48"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-33" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton48"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-33" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 33"
+                    android:id="@+id/textView63"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton48"
+                    android:layout_alignLeft="@+id/imageButton48"
+                    android:layout_alignStart="@+id/imageButton48"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView50"
+                    android:layout_alignTop="@+id/button51"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button51"
+                    android:layout_toStartOf="@+id/button51"
+                    android:layout_alignRight="@+id/textView63"
+                    android:layout_alignEnd="@+id/textView63"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="35"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button52"
+                    android:layout_alignBottom="@+id/imageButton49"
+                    android:layout_alignRight="@+id/imageButton49"
+                    android:layout_alignEnd="@+id/imageButton49"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-34" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton49"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-34" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 34"
+                    android:id="@+id/textView64"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton49"
+                    android:layout_alignLeft="@+id/imageButton49"
+                    android:layout_alignStart="@+id/imageButton49"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView51"
+                    android:layout_alignTop="@+id/button52"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button52"
+                    android:layout_toStartOf="@+id/button52"
+                    android:layout_alignRight="@+id/textView64"
+                    android:layout_alignEnd="@+id/textView64"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="36"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button53"
+                    android:layout_alignBottom="@+id/imageButton50"
+                    android:layout_alignRight="@+id/imageButton50"
+                    android:layout_alignEnd="@+id/imageButton50"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-35" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton50"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-35" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 35"
+                    android:id="@+id/textView65"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton50"
+                    android:layout_alignLeft="@+id/imageButton50"
+                    android:layout_alignStart="@+id/imageButton50"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView52"
+                    android:layout_alignTop="@+id/button53"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button53"
+                    android:layout_toStartOf="@+id/button53"
+                    android:layout_alignRight="@+id/textView65"
+                    android:layout_alignEnd="@+id/textView65"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="37"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button54"
+                    android:layout_alignBottom="@+id/imageButton51"
+                    android:layout_alignRight="@+id/imageButton51"
+                    android:layout_alignEnd="@+id/imageButton51"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-36" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton51"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-36" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 36"
+                    android:id="@+id/textView66"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton51"
+                    android:layout_alignLeft="@+id/imageButton51"
+                    android:layout_alignStart="@+id/imageButton51"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView53"
+                    android:layout_alignTop="@+id/button54"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button54"
+                    android:layout_toStartOf="@+id/button54"
+                    android:layout_alignRight="@+id/textView66"
+                    android:layout_alignEnd="@+id/textView66"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="38"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button55"
+                    android:layout_alignBottom="@+id/imageButton52"
+                    android:layout_alignRight="@+id/imageButton52"
+                    android:layout_alignEnd="@+id/imageButton52"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-37" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton52"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-37" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 37"
+                    android:id="@+id/textView67"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton52"
+                    android:layout_alignLeft="@+id/imageButton52"
+                    android:layout_alignStart="@+id/imageButton52"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView54"
+                    android:layout_alignTop="@+id/button55"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button55"
+                    android:layout_toStartOf="@+id/button55"
+                    android:layout_alignRight="@+id/textView67"
+                    android:layout_alignEnd="@+id/textView67"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="39"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button56"
+                    android:layout_alignBottom="@+id/imageButton53"
+                    android:layout_alignRight="@+id/imageButton53"
+                    android:layout_alignEnd="@+id/imageButton53"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-38" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton53"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-38" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 38"
+                    android:id="@+id/textView68"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton53"
+                    android:layout_alignLeft="@+id/imageButton53"
+                    android:layout_alignStart="@+id/imageButton53"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView55"
+                    android:layout_alignTop="@+id/button56"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button56"
+                    android:layout_toStartOf="@+id/button56"
+                    android:layout_alignRight="@+id/textView68"
+                    android:layout_alignEnd="@+id/textView68"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="40"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button57"
+                    android:layout_alignBottom="@+id/imageButton54"
+                    android:layout_alignRight="@+id/imageButton54"
+                    android:layout_alignEnd="@+id/imageButton54"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-39" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton54"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-39" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 39"
+                    android:id="@+id/textView69"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton54"
+                    android:layout_alignLeft="@+id/imageButton54"
+                    android:layout_alignStart="@+id/imageButton54"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView56"
+                    android:layout_alignTop="@+id/button57"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button57"
+                    android:layout_toStartOf="@+id/button57"
+                    android:layout_alignRight="@+id/textView69"
+                    android:layout_alignEnd="@+id/textView69"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="41"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button58"
+                    android:layout_alignBottom="@+id/imageButton55"
+                    android:layout_alignRight="@+id/imageButton55"
+                    android:layout_alignEnd="@+id/imageButton55"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-40" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton55"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-40" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 40"
+                    android:id="@+id/textView70"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton55"
+                    android:layout_alignLeft="@+id/imageButton55"
+                    android:layout_alignStart="@+id/imageButton55"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView57"
+                    android:layout_alignTop="@+id/button58"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button58"
+                    android:layout_toStartOf="@+id/button58"
+                    android:layout_alignRight="@+id/textView70"
+                    android:layout_alignEnd="@+id/textView70"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="42"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button59"
+                    android:layout_alignBottom="@+id/imageButton56"
+                    android:layout_alignRight="@+id/imageButton56"
+                    android:layout_alignEnd="@+id/imageButton56"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-41" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton56"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-41" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 41"
+                    android:id="@+id/textView71"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton56"
+                    android:layout_alignLeft="@+id/imageButton56"
+                    android:layout_alignStart="@+id/imageButton56"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView58"
+                    android:layout_alignTop="@+id/button59"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button59"
+                    android:layout_toStartOf="@+id/button59"
+                    android:layout_alignRight="@+id/textView71"
+                    android:layout_alignEnd="@+id/textView71"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="43"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button60"
+                    android:layout_alignBottom="@+id/imageButton57"
+                    android:layout_alignRight="@+id/imageButton57"
+                    android:layout_alignEnd="@+id/imageButton57"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-42" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton57"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-42" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 42"
+                    android:id="@+id/textView72"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton57"
+                    android:layout_alignLeft="@+id/imageButton57"
+                    android:layout_alignStart="@+id/imageButton57"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView59"
+                    android:layout_alignTop="@+id/button60"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button60"
+                    android:layout_toStartOf="@+id/button60"
+                    android:layout_alignRight="@+id/textView72"
+                    android:layout_alignEnd="@+id/textView72"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="44"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button61"
+                    android:layout_alignBottom="@+id/imageButton58"
+                    android:layout_alignRight="@+id/imageButton58"
+                    android:layout_alignEnd="@+id/imageButton58"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-43" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton58"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-43" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 43"
+                    android:id="@+id/textView73"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton58"
+                    android:layout_alignLeft="@+id/imageButton58"
+                    android:layout_alignStart="@+id/imageButton58"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView60"
+                    android:layout_alignTop="@+id/button61"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button61"
+                    android:layout_toStartOf="@+id/button61"
+                    android:layout_alignRight="@+id/textView73"
+                    android:layout_alignEnd="@+id/textView73"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="45"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button62"
+                    android:layout_alignBottom="@+id/imageButton59"
+                    android:layout_alignRight="@+id/imageButton59"
+                    android:layout_alignEnd="@+id/imageButton59"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-44" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton59"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-44" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 44"
+                    android:id="@+id/textView74"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton59"
+                    android:layout_alignLeft="@+id/imageButton59"
+                    android:layout_alignStart="@+id/imageButton59"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView61"
+                    android:layout_alignTop="@+id/button62"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button62"
+                    android:layout_toStartOf="@+id/button62"
+                    android:layout_alignRight="@+id/textView74"
+                    android:layout_alignEnd="@+id/textView74"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="46"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button63"
+                    android:layout_alignBottom="@+id/imageButton60"
+                    android:layout_alignRight="@+id/imageButton60"
+                    android:layout_alignEnd="@+id/imageButton60"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-45" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton60"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-45" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 45"
+                    android:id="@+id/textView75"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton60"
+                    android:layout_alignLeft="@+id/imageButton60"
+                    android:layout_alignStart="@+id/imageButton60"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView62"
+                    android:layout_alignTop="@+id/button63"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button63"
+                    android:layout_toStartOf="@+id/button63"
+                    android:layout_alignRight="@+id/textView75"
+                    android:layout_alignEnd="@+id/textView75"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="47"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button64"
+                    android:layout_alignBottom="@+id/imageButton61"
+                    android:layout_alignRight="@+id/imageButton61"
+                    android:layout_alignEnd="@+id/imageButton61"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-46" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton61"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-46" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 46"
+                    android:id="@+id/textView76"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton61"
+                    android:layout_alignLeft="@+id/imageButton61"
+                    android:layout_alignStart="@+id/imageButton61"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView63"
+                    android:layout_alignTop="@+id/button64"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button64"
+                    android:layout_toStartOf="@+id/button64"
+                    android:layout_alignRight="@+id/textView76"
+                    android:layout_alignEnd="@+id/textView76"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="48"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button65"
+                    android:layout_alignBottom="@+id/imageButton62"
+                    android:layout_alignRight="@+id/imageButton62"
+                    android:layout_alignEnd="@+id/imageButton62"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-47" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton62"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-47" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 47"
+                    android:id="@+id/textView77"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton62"
+                    android:layout_alignLeft="@+id/imageButton62"
+                    android:layout_alignStart="@+id/imageButton62"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView64"
+                    android:layout_alignTop="@+id/button65"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button65"
+                    android:layout_toStartOf="@+id/button65"
+                    android:layout_alignRight="@+id/textView77"
+                    android:layout_alignEnd="@+id/textView77"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="49"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button66"
+                    android:layout_alignBottom="@+id/imageButton63"
+                    android:layout_alignRight="@+id/imageButton63"
+                    android:layout_alignEnd="@+id/imageButton63"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-48" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton63"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-48" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 48"
+                    android:id="@+id/textView78"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton63"
+                    android:layout_alignLeft="@+id/imageButton63"
+                    android:layout_alignStart="@+id/imageButton63"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView65"
+                    android:layout_alignTop="@+id/button66"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button66"
+                    android:layout_toStartOf="@+id/button66"
+                    android:layout_alignRight="@+id/textView78"
+                    android:layout_alignEnd="@+id/textView78"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="50"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button67"
+                    android:layout_alignBottom="@+id/imageButton64"
+                    android:layout_alignRight="@+id/imageButton64"
+                    android:layout_alignEnd="@+id/imageButton64"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-49" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton64"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-49" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 49"
+                    android:id="@+id/textView79"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton64"
+                    android:layout_alignLeft="@+id/imageButton64"
+                    android:layout_alignStart="@+id/imageButton64"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView66"
+                    android:layout_alignTop="@+id/button67"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button67"
+                    android:layout_toStartOf="@+id/button67"
+                    android:layout_alignRight="@+id/textView79"
+                    android:layout_alignEnd="@+id/textView79"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="51"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button68"
+                    android:layout_alignBottom="@+id/imageButton65"
+                    android:layout_alignRight="@+id/imageButton65"
+                    android:layout_alignEnd="@+id/imageButton65"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-50" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton65"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-50" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 50"
+                    android:id="@+id/textView80"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton65"
+                    android:layout_alignLeft="@+id/imageButton65"
+                    android:layout_alignStart="@+id/imageButton65"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView67"
+                    android:layout_alignTop="@+id/button68"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button68"
+                    android:layout_toStartOf="@+id/button68"
+                    android:layout_alignRight="@+id/textView80"
+                    android:layout_alignEnd="@+id/textView80"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="52"
+                android:layout_column="0" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:id="@+id/button69"
+                    android:layout_alignBottom="@+id/imageButton66"
+                    android:layout_alignRight="@+id/imageButton66"
+                    android:layout_alignEnd="@+id/imageButton66"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:nestedScrollingEnabled="true"
+                    android:onClick="buttonClicked"
+                    android:tag="Radio-2-Episode-51" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton66"
+                    android:src="@drawable/buttonbackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"
+                    android:onClick="showMediaDataR2"
+                    android:tag="Radio-2-Episode-51" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episode 51"
+                    android:id="@+id/textView81"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_alignTop="@+id/imageButton66"
+                    android:layout_alignLeft="@+id/imageButton66"
+                    android:layout_alignStart="@+id/imageButton66"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView68"
+                    android:layout_alignTop="@+id/button69"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/r2cover"
+                    android:layout_alignBottom="@+id/button69"
+                    android:layout_toStartOf="@+id/button69"
+                    android:layout_alignRight="@+id/textView81"
+                    android:layout_alignEnd="@+id/textView81"
+                    android:layout_marginRight="50dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+
+        </GridLayout>
+
+    </RelativeLayout>
+</ScrollView>
